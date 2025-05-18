@@ -1,0 +1,10 @@
+Algorithm for stable marriage - Gale Shapley 
+
+1. Import men and women preferences 
+2. Initialize all men and women to be free
+
+3. Iterate through all free men while any is available 
+    3.A - Every free man goes to all women in his preference list according to the order and if he hasnt 
+        proposed to the women yet. For every women he goes to, he checks if she is free, if yes they become engaged. 
+
+4. 
