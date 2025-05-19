@@ -33,5 +33,20 @@ int main(){
     cout<<sizeof(*(c+0))<<"\n";//should also give us size of firs row of the array = 24
     cout<<sizeof(*(*c+0))<<"\n";//should give us size of pointer in the pointer array which is 8.
     cout<<sizeof(*(c))<<"\n";//should also give us size of first row
+
+    cout<<"sizeof with basic int array"<<"\n";
+
+    int d[2][3];
+
+    cout<<sizeof(d)<<"\n";//size of entire array = 24 bytes
+    cout<<sizeof(*(d+1))<<"\n";//size of second row
+    cout<<sizeof(*(*d+1))<<"\n";//size of second elemont
+
+    int arr[5] = {10,20,30,40,50,};
+    int *p = arr;
+
+    cout<<p<<"\n";//gives you address of entire array 
+    cout<<p+3<<"\n";
+   
     return 0;
 }
